@@ -1,12 +1,21 @@
-//condicionais
-//caixas de códigos
-//var hora = 9;
-//dentro do parênteses vai a condição
-//if ( hora == 12 ) o igual é isolado é definição de variavel então para condicionais se usa duplo
-var hora = 15;
-//o código só roda se a condição for satisfeita
+var hora = 8;
+
 if (hora < 12) {
   console.log("Bom dia");
-} else {
-  console.log("Não é de manhã");
+} else if (hora < 18) {
+  console.log("Boa tarde");
+} else if (hora <= 23) {
+  console.log("Boa noite");
+}
+// colocando apenas if vc cria condições independentes.
+//o else if faz ele ignorar os outros caso a condição seja satisfeita
+
+var hora = 6;
+if (hora >= 12 && hora < 18) {
+  console.log("Boa tarde");
+}
+
+var hora = 12;
+if (hora == 12 || hora == 18) {
+  console.log("É hora do rush");
 }
