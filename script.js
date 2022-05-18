@@ -1,21 +1,16 @@
-var hora = 8;
+// outras definições de variávies
+// variações criadas em 2015
 
-if (hora < 12) {
-  console.log("Bom dia");
-} else if (hora < 18) {
-  console.log("Boa tarde");
-} else if (hora <= 23) {
-  console.log("Boa noite");
-}
-// colocando apenas if vc cria condições independentes.
-//o else if faz ele ignorar os outros caso a condição seja satisfeita
+var nome = "Maria Krishna";
+//variável com hoisting - é enviada para o escopo geral da tela e é usada com variaveis globais como a window
+let name = "Levi Ackerman";
+//acessada pelo escopo direto da página. a variável não pode ser redefinida
+const namae = "Hange Zoë";
+//variável com valor constante. não pode receber um novo valor, com excessão de arreys e objetos
+console.log(window.nome);
+console.log(window.name);
 
-var hora = 6;
-if (hora >= 12 && hora < 18) {
-  console.log("Boa tarde");
-}
-
-var hora = 12;
-if (hora == 12 || hora == 18) {
-  console.log("É hora do rush");
+if (nome == "Maria Krishna") {
+  var idade = 30;
+  console.log(idade);
 }
