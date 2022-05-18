@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--as coisas dentro do head
+       são as primeiras coisas carregadas pelo navegador e só depois ele renderiza o body e outras coisas-->
+    <!--códigos grandes de .js são ideais ficar no final do body, para serem renderizados depois do carregamento completo
+      da página-->
+    <!--uma das funções do js é manipular os elementos da tela, outro motivo pela preferência no final do body-->
+    <title>Curso de JavaScript</title>
+  </head>
+  <body>
+    <h1>Seja bem Vindo</h1>
+    <p>Pode executado no navegador com a tag "script "</p>
+    <p>
+      EX:
+      <script>
+        document.write("Testando");
+      </script>
+    </p>
+    <p>Também pode ser escrito num arquivo separado .js</p>
+    <script src="./script.js"></script>
+  </body>
+</html>
