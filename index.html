@@ -14,8 +14,17 @@
     <title>Curso de JavaScript</title>
   </head>
   <body>
-    <h1 id="titulo">Seja bem vindes</h1>
-    <input name="usuario" id="campo" placeholder="nome do usuário" />
+    <div>
+      <img src="./img/cat.jpg" data-animal="cat" class="img" />
+    </div>
+    <br />
+    <button data-animal="Dog" onclick="trocarImagem('dog.jpg', 'dog')">
+      Dog
+    </button>
+    <button data-animal="Cat" onclick="trocarImagem('cat.jpg', 'cat')">
+      Cat
+    </button>
+    <button onclick="pegarAnimal()">Qual é o animal?</button>
 
     <script src="./script.js"></script>
   </body>

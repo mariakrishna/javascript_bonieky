@@ -1,33 +1,3 @@
-body {
-  font-family: "Courier New", Courier, monospace;
-}
-
-#exemplo {
-  width: 200px;
+.img {
   height: 200px;
-  margin: 20px;
-  border: 1px lightgray dashed;
-}
-
-.canon {
-  background-color: green;
-}
-
-.semicanon {
-  background-color: blue;
-  color: white;
-}
-
-.not-canon {
-  background-color: red;
-}
-
-.preto {
-  background-color: black;
-  color: white;
-}
-
-.branco {
-  background-color: white;
-  color: black;
 }

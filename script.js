@@ -1,18 +1,9 @@
-//função é um conjuntos de códigos ex= um botão que roda vários códigos
-
-function alterar(titulo /*aqui se coloca os parâmetros da função*/) {
-  document.getElementById("titulo").innerHTML = titulo;
-  document.getElementById("campo").placeholder = "levihan";
-} //criação da função. é diferente de usa-la.
-
-alterar("Levihan <3"); //executa a função
-
-alert("Levihan é canon!"); //função do js
-
-function somar(x, y) {
-  let total = x + y;
-
-  return total;
+function trocarImagem(filename, animalName) {
+  document.querySelector(".img").setAttribute("src", "img/" + filename);
+  // insere um valor em um atributo
+  document.querySelector(".img").setAttribute("data-animal", animalName);
 }
-
-var resultado = somar(10, 15);
+function pegarAnimal() {
+  let animal = document.querySelector(".img").getAttribute("data-animal");
+  alert("the animal is " + animal);
+}
