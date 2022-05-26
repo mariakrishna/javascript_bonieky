@@ -21,3 +21,13 @@ body {
 .not-canon {
   background-color: red;
 }
+
+.preto {
+  background-color: black;
+  color: white;
+}
+
+.branco {
+  background-color: white;
+  color: black;
+}

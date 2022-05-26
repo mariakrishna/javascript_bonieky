@@ -17,13 +17,19 @@ function notcanon() {
 }
 
 function trocar() {
-  if (document.querySelector(".semicanon").classList.contains("semicanon")) {
-    document.querySelector(".semicanon").classList.remove("semicanon");
-    document.querySelector(".semicanon").classList.add("canon");
+  if (document.querySelector(".preto").classList.contains("preto")) {
+    document.querySelector(".preto").classList.remove("preto");
+    document.querySelector(".branco").classList.add("branco");
   }
 
-  if (document.querySelector(".semicanon").classList.contains("canon")) {
-    document.querySelector(".semicanon").classList.remove("canon");
-    document.querySelector(".semicanon").classList.add("semicanon");
+  if (document.querySelector(".branco").classList.contains("branco")) {
+    document.querySelector(".branco").classList.remove("branco");
+    document.querySelector(".preto").classList.add("preto");
   }
 }
+// tipos de dados
+var nome = "Maria";
+var idade = 90;
+var salvo = true;
+
+var tipo = typeof idade;
