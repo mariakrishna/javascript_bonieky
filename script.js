@@ -1,35 +1,18 @@
-function canon() {
-  document.querySelector("#exemplo").classList.remove("semicanon");
-  document.querySelector("#exemplo").classList.remove("not-canon");
-  document.querySelector("#exemplo").classList.add("canon");
+//função é um conjuntos de códigos ex= um botão que roda vários códigos
+
+function alterar(titulo /*aqui se coloca os parâmetros da função*/) {
+  document.getElementById("titulo").innerHTML = titulo;
+  document.getElementById("campo").placeholder = "levihan";
+} //criação da função. é diferente de usa-la.
+
+alterar("Levihan <3"); //executa a função
+
+alert("Levihan é canon!"); //função do js
+
+function somar(x, y) {
+  let total = x + y;
+
+  return total;
 }
 
-function semicanon() {
-  document.querySelector("#exemplo").classList.remove("canon");
-  document.querySelector("#exemplo").classList.remove("not-canon");
-  document.querySelector("#exemplo").classList.add("semicanon");
-}
-
-function notcanon() {
-  document.querySelector("#exemplo").classList.remove("semicanon");
-  document.querySelector("#exemplo").classList.remove("canon");
-  document.querySelector("#exemplo").classList.add("not-canon");
-}
-
-function trocar() {
-  if (document.querySelector(".preto").classList.contains("preto")) {
-    document.querySelector(".preto").classList.remove("preto");
-    document.querySelector(".branco").classList.add("branco");
-  }
-
-  if (document.querySelector(".branco").classList.contains("branco")) {
-    document.querySelector(".branco").classList.remove("branco");
-    document.querySelector(".preto").classList.add("preto");
-  }
-}
-// tipos de dados
-var nome = "Maria";
-var idade = 90;
-var salvo = true;
-
-var tipo = typeof idade;
+var resultado = somar(10, 15);
