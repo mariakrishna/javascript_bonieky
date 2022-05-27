@@ -5,27 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
-    <!--as coisas dentro do head
-       são as primeiras coisas carregadas pelo navegador e só depois ele renderiza o body e outras coisas-->
-    <!--códigos grandes de .js são ideais ficar no final do body, para serem renderizados depois do carregamento completo
-      da página-->
-    <!--uma das funções do js é manipular os elementos da tela, outro motivo pela preferência no final do body-->
     <title>Curso de JavaScript</title>
   </head>
   <body>
-    <div class="texto">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-        iure voluptatum autem eum deleniti nostrum, voluptate, enim deserunt
-        ipsa perspiciatis dolores et nisi reiciendis libero architecto est
-        officia inventore earum? Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Culpa perspiciatis quisquam asperiores eveniet quod
-        quas nobis libero laudantium dolores blanditiis vero illum itaque, harum
-        dignissimos! Quas quidem illo vitae aliquid.
-      </p>
-    </div>
-    <div onclick="subirTela()" class="scroll-btn"></div>
+    <h1 id="titulo" onmouseout="alert('vc é bunita ( ˘ ³˘)♥')">
+      seja bem vinde!
+    </h1>
+    <input id="campo" type="text" name="usuárrio" value="nome do usuário" />
+    <!--<button onclick="document.getElementById('titulo').innerHTML = 'Vem cá'">-->
+    <button onclick="this.innerHTML='tchururuuu~'">clique em mim</button>
+
     <script src="./script.js"></script>
   </body>
 </html>
