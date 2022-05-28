@@ -1,13 +1,35 @@
-//arrays
-//os itens começam a contar do 0
-let carro1 = "palio";
-let carro2 = "uno";
-let carro3 = "corola";
+//objetos - similar a arrays
 
-let carros = ["palio", "uno", "corola"];
-let carros2 = new Array("palio", "uno", "corola"); //forma antiga de declarar
+//array
+let carros = [
+  { nome: "fiat", modelo: "palio" },
+  { nome: "fiat", modelo: "uno" },
+  { nome: "toyota", modelo: "corola" },
+];
 
-console.log(carros); //acessa a primeira propriedade do arrat
+console.log(carros);
+console.log(carros[2].modelo);
 
-let ingredientes = ["uva", "pera", "maça", "arroz", "macarrão"];
-console.log(ingredientes[0][1]);
+//objeto - tem que especificar o nome e valor do item q se quer especificar
+let carro = {
+  //proriedades
+  nome: "fiat",
+  modelo: "uno",
+  peso: "800kg",
+  ligar: function () {
+    //console.log("ligando o " + this.modelo);
+    this.ligar = true;
+    console.log("vrum vrum");
+  },
+  acelerar: function () {
+    if (this.ligar == true) {
+      console.log("trrrrrrrr");
+    } else {
+      console.log(this.nome + " " + this.modelo + " não está ligado");
+    }
+  },
+};
+
+console.log(carro["modelo"]);
+console.log(carro.nome);
+carro.acelerar();
