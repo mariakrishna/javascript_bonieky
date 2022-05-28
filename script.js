@@ -1,13 +1,26 @@
-function clicou() {
-  //alert("vc clicou no butão :)");
-  //document.getElementById("titulo").innerHTML = "tu mudou o título!";
+/*function azul() {
+  limpar();
+
+  document.getElementById("titulo").classList.add("azul");
 }
 
-function digitou(e) {
-  //console.log(e);
-  if (e.keyCode == 13 && e.ctrlKey == true) {
-    //enter
-    let texto = document.getElementById("campo").value;
-    console.log(texto);
-  }
+function vermelho() {
+  limpar();
+  document.getElementById("titulo").classList.add("vermelho");
+}
+
+function verde() {
+  limpar();
+  document.getElementById("titulo").classList.add("verde");
+}
+
+function limpar() {
+  document.getElementById("titulo").classList.remove("azul");
+  document.getElementById("titulo").classList.remove("vermelho");
+  document.getElementById("titulo").classList.remove("verde");
+}*/
+
+function mostrarTelfone(elemento) {
+  elemento.style.display = "none";
+  document.getElementById("tel").style.display = "block";
 }
