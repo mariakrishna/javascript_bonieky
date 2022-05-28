@@ -1,26 +1,13 @@
-/*function azul() {
-  limpar();
+//arrays
+//os itens começam a contar do 0
+let carro1 = "palio";
+let carro2 = "uno";
+let carro3 = "corola";
 
-  document.getElementById("titulo").classList.add("azul");
-}
+let carros = ["palio", "uno", "corola"];
+let carros2 = new Array("palio", "uno", "corola"); //forma antiga de declarar
 
-function vermelho() {
-  limpar();
-  document.getElementById("titulo").classList.add("vermelho");
-}
+console.log(carros); //acessa a primeira propriedade do arrat
 
-function verde() {
-  limpar();
-  document.getElementById("titulo").classList.add("verde");
-}
-
-function limpar() {
-  document.getElementById("titulo").classList.remove("azul");
-  document.getElementById("titulo").classList.remove("vermelho");
-  document.getElementById("titulo").classList.remove("verde");
-}*/
-
-function mostrarTelfone(elemento) {
-  elemento.style.display = "none";
-  document.getElementById("tel").style.display = "block";
-}
+let ingredientes = ["uva", "pera", "maça", "arroz", "macarrão"];
+console.log(ingredientes[0][1]);
