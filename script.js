@@ -1,29 +1,19 @@
-//switch - um valor com varias condicionais diferentes
+// for loop
+// for loop array
 
-let dia = 3;
-let diaNome = "";
-switch (dia) {
-  case 1:
-    diaNome = "monday";
-    break;
-  case 2:
-    diaNome = "tuesday";
-    break;
-  case 3:
-    diaNome = "wednesday";
-    break;
-  case 4:
-    diaNome = "thrusday";
-    break;
-  case 5:
-    diaNome = "friday";
-    break;
-  case 6:
-    diaNome = "saturday";
-    break;
-  case 7:
-    diaNome = "sunday";
-    break;
+let carros = ["ferrari", "fusca", "palio", "corolla"];
+/*let texto = "";
+
+for (let i = 0; i < 10; i++) {
+  //criação de variaveis, verificação e imprementação
+  texto = texto + i + "<br />";
+}*/
+
+let html = "<ul>";
+
+for (let i in carros) {
+  html += "<li>" + carros[i] + "</li>";
 }
 
-document.getElementById("dia").innerHTML = "today is: " + diaNome;
+html += "</ul>";
+document.getElementById("demo").innerHTML = html;
